@@ -9,6 +9,9 @@ const config = {
     path: resolve(__dirname, 'dist'),
     publicPath: '/'
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   devServer: {
 hot: true,
 contentBase: resolve(__dirname, 'dist'),
@@ -22,12 +25,6 @@ overlay: {
   },
   module: {
     rules: [
-      {
-        enforce: 'pre',
-        test: /\.(js|jsx)$/,
-        loaders: ['eslint-loader'],
-        exclude: /node_modules/,
-      },
       {
         test: /\.(js|jsx)$/,
         loaders: ['babel-loader'],

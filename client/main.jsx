@@ -1,9 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './main.scss'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './main.scss';
+import Hom from './components/Hom';
 
-const Home = () => <div>12345678</div>
+console.log(<Hom />)
 
-const target = document.getElementById('root')
-
-ReactDOM.render(<Home />, target)
+ReactDOM.render(<Hom />, document.getElementById('root'));
